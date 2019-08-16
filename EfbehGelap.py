@@ -148,7 +148,7 @@ def menu():
     os.system('clear')
     print logo
     print '\x1b[1;97m\xe2\x95\x94' + 50 * '\xe2\x95\x90' + '╗'
-    print '\xe2\x95\x91\x1b[1;91m[\x1b[1;96m\xe2\x9c\x93\x1b[1;91m]\x1b[1;97m Name \x1b[1;91m: \x1b[1;96m' + nama + (39 - len(nama)) * '\x1b[1;97m ' + '║'
+    print '\xe2\x95\x91\x1b[1;91m[\x1b[1;96m\xe2\x9c\x93\x1b[1;91m]\x1b[1;97m Nama \x1b[1;91m: \x1b[1;96m' + nama + (39 - len(nama)) * '\x1b[1;97m ' + '║'
     print '\xe2\x95\x91\x1b[1;91m[\x1b[1;96m\xe2\x9c\x93\x1b[1;91m]\x1b[1;97m FBID \x1b[1;91m: \x1b[1;92m' + id + (39 - len(id)) * '\x1b[1;97m ' + '║'
     print '\xe2\x95\x91\x1b[1;91m[\x1b[1;96m\xe2\x9c\x93\x1b[1;91m]\x1b[1;97m Subs \x1b[1;91m: \x1b[1;96m' + sub + (39 - len(sub)) * '\x1b[1;97m ' + '║'
     print '\x1b[1;97m╠' + 50 * '\xe2\x95\x90' + '╝'
