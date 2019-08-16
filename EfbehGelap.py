@@ -120,7 +120,7 @@ def login():
                 keluar()
 
         if 'checkpoint' in url:
-            print '\n\x1b[1;91m[!] \x1b[1;93mAkun Telah Checkpoint Mampozz Hek Efbeh Lagi awokoawkkoaw Sabar YaGayn :''
+            print '\n\x1b[1;91m[!] \x1b[1;93mAkun Telah Checkpoint Mampozz Hek Efbeh Lagi awokoawkkoaw Sabar Ya Gayn'
             os.system('rm -rf login.txt')
             time.sleep(1)
             keluar()
