@@ -14,7 +14,7 @@ br.addheaders = [('User-Agent', 'Opera/9.80 (Android; Opera Mini/32.0.2254/85. U
 
 
 def keluar():
-    print '\x1b[1;91m[!] Closed'
+    print '\x1b[1;92m[!] Sukses Keluar'
     os.sys.exit()
 
 
@@ -24,13 +24,13 @@ def jalan(z):
         sys.stdout.flush()
         time.sleep(0.01)
 
-logo = " \x1b[1;97m█████████\n \x1b[1;97m█▄█████▄█         \x1b[1;96m●▬▬▬▬▬▬▬▬▬๑۩۩๑▬▬▬▬▬▬▬▬●\n \x1b[1;97m█ \x1b[1;91m▼▼▼▼▼  \x1b[1;97m- _ --_-- \x1b[1;92m╔╦╗┌─┐┬─┐┬┌─   ╔═╗╔╗ \n \x1b[1;97m█  \x1b[1;97m  \x1b[1;97m_-_-- -_ --__ \x1b[1;92m ║║├─┤├┬┘├┴┐───╠╣ ╠╩╗\n \x1b[1;97m█ \x1b[1;91m▲▲▲▲▲ \x1b[1;97m--  - _ -- \x1b[1;92m═╩╝┴ ┴┴└─┴ ┴   ╚  ╚═╝  \x1b[1;93mVersModeGans\n \x1b[1;97m█████████         \x1b[1;96m«==========✧==========»\n \x1b[1;97m ██ ██\n \x1b[1;97m╔════════════════════════════════════════════════╗\n \x1b[1;97m║ \x1b[1;93m*  \x1b[1;97mReCode   \x1b[1;91m:  \x1b[1;96m ⊱XͭPͪLͤᗝIƬ༻₁₀₀ᵏ  \x1b[1;97m                   ║\n \x1b[1;97m║ \x1b[1;93m*  \x1b[1;97mGitHub   \x1b[1;91m:  \x1b[1;92m \x1b[44mhttps://github.com/TheSploit\x1b[0m   \x1b[1;97m║\n \x1b[1;97m╚════════════════════════════════════════════════╝"
+logo = " \x1b[1;93m█████████\n \x1b[1;93m█▄█████▄█         \x1b[1;93m●▬▬▬▬▬▬▬▬▬๑۩۩๑▬▬▬▬▬▬▬▬●\n \x1b[1;93m█ \x1b[1;91m▼▼▼▼▼  \x1b[1;97m- _ --_-- \x1b[1;92m╔╦╗┌─┐┬─┐┬┌─   ╔═╗╔╗ \n \x1b[1;97m█  \x1b[1;97m  \x1b[1;97m_-_-- -_ --__ \x1b[1;92m ║║├─┤├┬┘├┴┐───╠╣ ╠╩╗\n \x1b[1;97m█ \x1b[1;91m▲▲▲▲▲ \x1b[1;97m--  - _ -- \x1b[1;92m═╩╝┴ ┴┴└─┴ ┴   ╚  ╚═╝  \x1b[1;93mVersModeGans\n \x1b[1;97m█████████         \x1b[1;93m«==========✧==========»\n \x1b[1;93m ██ ██\n \x1b[1;93m╔════════════════════════════════════════════════╗\n \x1b[1;93m║ \x1b[1;93m*  \x1b[1;97mReCode   \x1b[1;91m:  \x1b[1;97m ⊱XͭPͪLͤᗝIƬ༻₁₀₀ᵏ  \x1b[1;97m                   ║\n \x1b[1;97m║ \x1b[1;93m*  \x1b[1;97mGitHub   \x1b[1;91m:  \x1b[1;92m \x1b[44mhttps://github.com/TheSploit\x1b[0m   \x1b[1;97m║\n \x1b[1;97m╚════════════════════════════════════════════════╝"
 
 def tik():
     titik = [
      '.   ', '..  ', '... ']
     for o in titik:
-        print '\r\x1b[1;91m[\xe2\x97\x8f] \x1b[1;92mLoading \x1b[1;97m' + o,
+        print '\r\x1b[1;91m[\xe2\x97\x8f] \x1b[1;96mMohon Tunggu \x1b[1;97m' + o,
         sys.stdout.flush()
         time.sleep(1)
 
@@ -66,9 +66,9 @@ def login():
         os.system('clear')
         print logo
         print 52 * '\x1b[1;97m\xe2\x95\x90'
-        print '\x1b[1;91m[\xe2\x98\x86] \x1b[1;92mLOGIN FACEBOOK ACCOUNT \x1b[1;91m[\xe2\x98\x86]'
-        id = raw_input('\x1b[1;91m[+] \x1b[1;36mUsername \x1b[1;91m:\x1b[1;92m ')
-        pwd = getpass.getpass('\x1b[1;91m[+] \x1b[1;36mPassword \x1b[1;91m:\x1b[1;92m ')
+        print '\x1b[1;91m[\xe2\x98\x86] \x1b[1;92mLOGIN KE FACEBOOK \x1b[1;91m[\xe2\x98\x86]'
+        id = raw_input('\x1b[1;91m[+] \x1b[1;36mEMAIL \x1b[1;91m:\x1b[1;92m ')
+        pwd = getpass.getpass('\x1b[1;91m[+] \x1b[1;36mPASSWORD \x1b[1;91m:\x1b[1;92m ')
         tik()
         try:
             br.open('https://m.facebook.com')
