@@ -567,7 +567,7 @@ def pilih_super():
             os.system('clear')
             print logo
             print 52 * '\x1b[1;97m\xe2\x95\x90'
-            jalan('\x1b[1;91m[+] \x1b[1;92mMengambil id friends \x1b[1;97m...')
+            jalan('\x1b[1;91m[+] \x1b[1;96mMengambil id friends \x1b[1;93m...')
             r = requests.get('https://graph.facebook.com/me/friends?access_token=' + toket)
             z = json.loads(r.text)
             for s in z['data']:
@@ -578,14 +578,14 @@ def pilih_super():
                 os.system('clear')
                 print logo
                 print 52 * '\x1b[1;97m\xe2\x95\x90'
-                idg = raw_input('\x1b[1;91m[+] \x1b[1;92mID Group   \x1b[1;91m:\x1b[1;97m ')
+                idg = raw_input('\x1b[1;91m[+] \x1b[1;96mID Group   \x1b[1;91m:\x1b[1;92m ')
                 try:
                     r = requests.get('https://graph.facebook.com/group/?id=' + idg + '&access_token=' + toket)
                     asw = json.loads(r.text)
-                    print '\x1b[1;91m[\x1b[1;96m\xe2\x9c\x93\x1b[1;91m] \x1b[1;92mName grup \x1b[1;91m:\x1b[1;97m ' + asw['name']
+                    print '\x1b[1;91m[\x1b[1;96m\xe2\x9c\x93\x1b[1;91m] \x1b[1;92mName grup \x1b[1;91m:\x1b[1;92m ' + asw['name']
                 except KeyError:
                     print '\x1b[1;91m[!] Group not found'
-                    raw_input('\n\x1b[1;91m[ \x1b[1;97mBack \x1b[1;91m]')
+                    raw_input('\n\x1b[1;97m[ \x1b[1;92mBack \x1b[1;97m]')
                     super()
 
                 re = requests.get('https://graph.facebook.com/' + idg + '/members?fields=name,id&limit=999999999&access_token=' + toket)
@@ -599,7 +599,7 @@ def pilih_super():
                     print logo
                     print 52 * '\x1b[1;97m\xe2\x95\x90'
                     try:
-                        idlist = raw_input('\x1b[1;91m[+] \x1b[1;92mFile ID  \x1b[1;91m: \x1b[1;97m')
+                        idlist = raw_input('\x1b[1;93m[+] \x1b[1;96mFile ID  \x1b[1;93m: \x1b[1;92m')
                         for line in open(idlist,'r').readlines():
                         	id.append(line.strip())
                     except IOError:
