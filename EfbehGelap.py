@@ -125,7 +125,7 @@ def login():
             time.sleep(1)
             keluar()
         else:
-            print '\n\x1b[1;91m[!] Login failed'
+            print '\n\x1b[1;91m[!] Gagal Login Check kembali Akun Anda'
             os.system('rm -rf login.txt')
             time.sleep(1)
             login()
@@ -355,7 +355,7 @@ def mini():
         os.system('clear')
         print logo
         print 52 * '\x1b[1;97m\xe2\x95\x90'
-        print '\x1b[1;91m[ INFO ] Target must be your friend !'
+        print '\x1b[1;91m[ INFO ] Berteman dulu Cok dengan Target bru bisa di Hek !'
         try:
             id = raw_input('\x1b[1;91m[+] \x1b[1;92mID Target \x1b[1;91m:\x1b[1;97m ')
             jalan('\x1b[1;91m[\xe2\x9c\xba] \x1b[1;92mPlease wait \x1b[1;97m...')
@@ -449,12 +449,12 @@ def mini():
                                             raw_input('\n\x1b[1;91m[ \x1b[1;97mBack \x1b[1;91m]')
                                             menu_hack()
                                         else:
-                                            print '\x1b[1;91m[!] Sorry, opening password target failed :('
-                                            print '\x1b[1;91m[!] Try other method.'
+                                            print '\x1b[1;91m[!] Sorry, Gagal membuka password target :('
+                                            print '\x1b[1;91m[!] Coba Metode lain beb.'
                                             raw_input('\n\x1b[1;91m[ \x1b[1;97mBack \x1b[1;91m]')
                                             menu_hack()
         except KeyError:
-            print '\x1b[1;91m[!] Terget not found'
+            print '\x1b[1;91m[!] Target tidak ditemukan'
             raw_input('\n\x1b[1;91m[ \x1b[1;97mBack \x1b[1;91m]')
             menu_hack()
 
